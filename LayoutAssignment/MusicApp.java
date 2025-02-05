@@ -5,10 +5,10 @@ import java.awt.event.ActionListener;
 
 public class MusicApp extends JFrame{
 
-    private JTextField artistField;
-    private JTextField studioField;
-    private JComboBox<String> categoryBox;
-    private JCheckBox availableCheckBox;
+    JTextField artistField;
+    JTextField studioField;
+    JComboBox<String> categoryBox;
+    JCheckBox availableCheckBox;
 
     public MusicApp(){
 
@@ -57,18 +57,18 @@ public class MusicApp extends JFrame{
         panel4.setLayout(new GridLayout(4,2,50,50));
 
         panel4.add(new JLabel("Artist Name:"));
-        JTextField artistField = new JTextField();
+        artistField = new JTextField();
         panel4.add(artistField);
 
         panel4.add(new JLabel("Recording Studio:"));
-        JTextField studioField = new JTextField();
+        studioField = new JTextField();
         panel4.add(studioField);
 
         panel4.add(new JLabel("Category:"));
-        JComboBox<String> categoryBox = new JComboBox<>(genreList);
+        categoryBox = new JComboBox<>(genreList);
         panel4.add(categoryBox);
 
-        JCheckBox availableCheckBox = new JCheckBox("Available");
+        availableCheckBox = new JCheckBox("Available");
         panel4.add(new JLabel("Song Available"));
         panel4.add(availableCheckBox);
 
@@ -108,10 +108,10 @@ public class MusicApp extends JFrame{
 
     private void handleSubmitButton() {
 
-        System.out.println("Artist: " + artistField.getText());
-        System.out.println("Studio: " + studioField.getText());
-        System.out.println("Category: " + categoryBox.getSelectedItem());
-        if (availableCheckBox.isSelected()) {
+        System.out.println("Artist: " + this.artistField.getText());
+        System.out.println("Studio: " + this.studioField.getText());
+        System.out.println("Category: " + this.categoryBox.getSelectedItem());
+        if (this.availableCheckBox.isSelected()) {
             System.out.println("Available: Yes");
         } else {
             System.out.println("Available: No");

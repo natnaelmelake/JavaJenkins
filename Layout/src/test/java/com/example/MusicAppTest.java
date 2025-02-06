@@ -12,6 +12,7 @@ class MusicAppTest {
     void setUp() {
         // Initialize the MusicApp before each test
         musicApp = new MusicApp();
+
     }
 
     @Test

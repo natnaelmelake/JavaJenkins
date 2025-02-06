@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MusicApp extends JFrame{
+public class MusicApp{
 
     JTextField artistField;
     JTextField studioField;
@@ -24,6 +24,7 @@ public class MusicApp extends JFrame{
         JButton submitButton = new JButton();
         submitButton.setBounds(50,50,50,50);
         submitButton.setText("Submit");
+
         JButton exitButton = new JButton();
         exitButton.setBounds(150,50,50,50);
         exitButton.setText("Exit");

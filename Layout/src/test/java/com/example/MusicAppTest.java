@@ -38,6 +38,7 @@ class MusicAppTest {
         assertTrue(availableCheckBox.isSelected(), "Availability checkbox should be checked");
     }
 
+
     @Test
     void shouldExitWithoutErrorsWhenExitButtonIsClicked() {
         // Ensure that calling the exit method does not cause any unexpected exceptions

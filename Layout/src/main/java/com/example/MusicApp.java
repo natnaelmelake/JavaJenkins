@@ -98,17 +98,31 @@ public class MusicApp extends JFrame{
                 handleExitButton();
             }
         });
-
     }
 
 
+    public JTextField getArtistField() {
+        return artistField;
+    }
 
-    private void handleExitButton() {
+    public JTextField getStudioField() {
+        return studioField;
+    }
+
+    public JComboBox<String> getCategoryBox() {
+        return categoryBox;
+    }
+
+    public JCheckBox getAvailableCheckBox() {
+        return availableCheckBox;
+    }
+
+    void handleExitButton() {
         System.exit(0);
     }
 
 
-    private void handleSubmitButton() {
+    void handleSubmitButton() {
 
         System.out.println("Artist: " + this.artistField.getText());
         System.out.println("Studio: " + this.studioField.getText());
